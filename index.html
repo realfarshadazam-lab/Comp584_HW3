@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <style type="text/css">
-     
+      /* CLIENT-SPECIFIC STYLES */
       body, table, td, a {
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
@@ -20,7 +20,7 @@
         -ms-interpolation-mode: bicubic;
       }
 
-     
+      /* RESET STYLES */
       img {
         border: 0;
         height: auto;
@@ -38,7 +38,7 @@
         width: 100% !important;
       }
 
-     
+      /* iOS BLUE LINKS */
       a[x-apple-data-detectors] {
         color: inherit !important;
         text-decoration: none !important;
@@ -48,7 +48,7 @@
         line-height: inherit !important;
       }
 
-    
+      /* GMAIL BLUE LINKS */
       u + #body a {
         color: inherit;
         text-decoration: none;
@@ -58,7 +58,7 @@
         line-height: inherit;
       }
 
-     
+      /* SAMSUNG MAIL BLUE LINKS */
       #MessageViewBody a {
         color: inherit;
         text-decoration: none;
@@ -68,7 +68,7 @@
         line-height: inherit;
       }
 
-    
+      /* MOBILE */
       @media screen and (max-width: 600px) {
         .container {
           width: 100% !important;
@@ -85,25 +85,44 @@
     </style>
   </head>
 
-  <body id="body" style="margin:0 !important; padding:0 !important; background-color:#f4f4f4; font-family:Arial, sans-serif;">
-
+  <body
+    id="body"
+    style="margin:0 !important; padding:0 !important; background-color:#f4f4f4; font-family:Arial, sans-serif;"
+  >
     <!-- Preheader (hidden preview text) -->
-    <div style="display:none; font-size:1px; color:#f4f4f4; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">
+    <div
+      style="display:none; font-size:1px; color:#f4f4f4; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;"
+    >
       Lakers season update, news, and fan highlights — tap to read the latest.
     </div>
 
-    <!-- OUTER WRAPPER (100% width) -->
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f4f4;">
+    <!-- OUTER WRAPPER (100% width / single-column layout) -->
+    <table
+      role="presentation"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="background-color:#f4f4f4;"
+    >
       <tr>
         <td align="center" style="padding:20px 0;">
 
-          <!-- INNER FIXED TABLE (600px) -->
-          <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="container" style="width:600px; background-color:#ffffff;">
+          <!-- INNER FIXED TABLE (600px recommended) -->
+          <table
+            role="presentation"
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            class="container"
+            style="width:600px; background-color:#ffffff;"
+          >
             <!-- Logo -->
             <tr>
               <td align="center" style="padding:20px 20px 10px 20px;">
                 <img
-                  src="assets/images/lakers-logo.png"
+                  src="images/Los-Angeles-Lakers-Transparent-File.png"
                   width="120"
                   alt="Los Angeles Lakers logo"
                   style="display:block; width:120px; max-width:120px; height:auto;"
@@ -124,9 +143,9 @@
             <tr>
               <td align="center">
                 <img
-                  src="assets/images/hero.jpg"
+                  src="images/Los-Angeles-Lakers-Transparent-File.png"
                   width="600"
-                  alt="Lakers game-night banner"
+                  alt="Lakers hero image"
                   style="display:block; width:100%; max-width:600px; height:auto;"
                 />
               </td>
@@ -150,12 +169,12 @@
               </td>
             </tr>
 
-            <!-- Centered Button (bulletproof style + extra click spacing) -->
+            <!-- Centered Button (extra spacing + easy to tap) -->
             <tr>
               <td align="center" style="padding:22px 20px 26px 20px;">
                 <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                   <tr>
-                    <td align="center" style="border-radius:8px;" bgcolor="#552583">
+                    <td align="center" bgcolor="#552583" style="border-radius:8px;">
                       <a
                         href="https://www.nba.com/lakers"
                         target="_blank"
@@ -169,7 +188,6 @@
                   </tr>
                 </table>
 
-                <!-- extra spacing below button (easier to tap / less cramped) -->
                 <div style="height:10px; line-height:10px; font-size:10px;">&nbsp;</div>
 
                 <p style="margin:0; font-size:12px; color:#666666; line-height:1.4;">
@@ -181,7 +199,7 @@
             <!-- Background Image Section Behind Text -->
             <tr>
               <td
-                background="assets/images/bg.jpg"
+                background="images/Los-Angeles-Lakers-Transparent-File.png"
                 style="background-repeat:no-repeat; background-size:cover; background-position:center; padding:26px 20px;"
               >
                 <h2 style="margin:0 0 10px 0; font-size:20px; color:#ffffff; line-height:1.2;">
@@ -201,7 +219,9 @@
                 </p>
 
                 <p style="margin:0 0 8px 0;">
-                  <a href="#" style="color:#552583; text-decoration:underline;">Unsubscribe from Lakers updates</a>
+                  <a href="#" style="color:#552583; text-decoration:underline;">
+                    Unsubscribe from Lakers updates
+                  </a>
                 </p>
 
                 <p style="margin:0;">
@@ -216,6 +236,5 @@
       </tr>
     </table>
     <!-- END OUTER WRAPPER -->
-
   </body>
 </html>
